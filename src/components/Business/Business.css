@@ -1,0 +1,221 @@
+.business-section {
+  background-color: var(--white);
+}
+
+.business-tabs-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.business-tab-btn {
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  background-color: var(--bg-tertiary);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.business-tab-btn.active {
+  background-color: var(--phonepe-purple);
+  color: var(--white);
+  box-shadow: 0 4px 14px rgba(95, 37, 159, 0.25);
+}
+
+/* Product Card */
+.business-product-card {
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-xl);
+  padding: clamp(2rem, 4vw, 3.5rem);
+  border: 1px solid var(--border-light);
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.product-badge {
+  display: inline-block;
+  background-color: var(--phonepe-purple-light);
+  color: var(--phonepe-purple);
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-xs);
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.product-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.3rem);
+  margin-bottom: 0.75rem;
+}
+
+.product-tagline {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.75rem;
+}
+
+.product-features-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.product-features-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.check-icon {
+  color: var(--phonepe-accent-green);
+  background-color: var(--phonepe-accent-green-light);
+  padding: 0.15rem;
+  border-radius: var(--radius-full);
+}
+
+.product-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Right Visual Displays */
+.soundbox-graphic-box, .gateway-graphic-box, .pos-graphic-box {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 280px;
+}
+
+.soundbox-speaker {
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(135deg, var(--phonepe-purple), #7a35c1);
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 10px 30px rgba(95, 37, 159, 0.3);
+}
+
+.soundbox-speaker.pulsing {
+  animation: soundWave 1.2s infinite;
+}
+
+.speaker-label {
+  color: var(--white);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.soundbox-alert-bubble {
+  margin-top: 1.25rem;
+  background-color: var(--phonepe-purple-light);
+  color: var(--phonepe-purple);
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius-full);
+  font-weight: 800;
+  font-size: 0.875rem;
+}
+
+.gateway-preview-card {
+  width: 100%;
+  max-width: 280px;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  border: 1px solid var(--border-subtle);
+}
+
+.gw-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.gw-amount {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--phonepe-purple);
+  margin: 0.75rem 0;
+}
+
+.gw-modes {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.gw-mode-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  background-color: var(--white);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border-light);
+}
+
+.pos-preview-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pos-chip {
+  background-color: var(--phonepe-accent-green-light);
+  color: #1b5e20;
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+/* Modal Form styling */
+.merchant-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.merchant-modal-intro {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.merchant-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .business-product-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

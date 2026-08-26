@@ -1,0 +1,282 @@
+.wealth-section {
+  background-color: var(--bg-secondary);
+}
+
+.wealth-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.wealth-card {
+  background-color: var(--white);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.gold-card {
+  border-top: 4px solid #ffc107;
+}
+
+.mf-card {
+  border-top: 4px solid var(--phonepe-purple);
+}
+
+.wealth-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.wealth-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gold-icon {
+  background-color: #fff8e1;
+  color: #ffb300;
+}
+
+.mf-icon {
+  background-color: var(--phonepe-purple-light);
+  color: var(--phonepe-purple);
+}
+
+.mf-tag {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--phonepe-purple);
+  background-color: var(--phonepe-purple-light);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-xs);
+}
+
+.wealth-title {
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.wealth-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.wealth-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
+.wealth-bullets li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.gold-action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.gold-price-tag {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #b78103;
+}
+
+.gold-cta {
+  background-color: #ffb300;
+  color: #111111;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.875rem;
+}
+
+.mf-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mf-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+}
+
+.mf-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.mf-cat {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.mf-return {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--phonepe-accent-green);
+}
+
+/* SIP Calculator */
+.sip-calculator-card {
+  background-color: var(--white);
+  border-radius: var(--radius-xl);
+  padding: clamp(1.75rem, 3.5vw, 2.5rem);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+}
+
+.calc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.calc-title-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.demo-indicator {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--phonepe-purple);
+  background-color: var(--phonepe-purple-light);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-full);
+}
+
+.calc-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.calc-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.val-display {
+  color: var(--phonepe-purple);
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+
+.sip-slider {
+  width: 100%;
+  accent-color: var(--phonepe-purple);
+  height: 6px;
+  cursor: pointer;
+}
+
+.calc-results {
+  background-color: var(--phonepe-purple-light);
+  padding: 1.75rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(95, 37, 159, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.res-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.res-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.res-value {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.res-value.gain {
+  color: var(--phonepe-accent-green);
+}
+
+.res-divider {
+  height: 1px;
+  background-color: rgba(95, 37, 159, 0.15);
+  margin: 0.25rem 0;
+}
+
+.res-row.total-row {
+  margin-top: 0.25rem;
+}
+
+.res-value.total {
+  font-size: 1.5rem;
+  color: var(--phonepe-purple);
+}
+
+.start-sip-btn {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .wealth-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .calc-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

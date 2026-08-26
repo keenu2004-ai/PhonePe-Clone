@@ -1,0 +1,43 @@
+.disclaimer-banner {
+  background-color: var(--phonepe-purple-dark);
+  color: #f3e8ff;
+  font-size: 0.8125rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 1001;
+}
+
+.disclaimer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.disclaimer-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: 1.4;
+}
+
+.disclaimer-icon {
+  color: #ffc107;
+  flex-shrink: 0;
+}
+
+.disclaimer-close {
+  color: #d8b4fe;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-xs);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.disclaimer-close:hover {
+  color: var(--white);
+  background-color: rgba(255, 255, 255, 0.1);
+}

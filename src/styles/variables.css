@@ -1,0 +1,46 @@
+:root {
+  /* Brand Colors */
+  --phonepe-purple: #5f259f;
+  --phonepe-purple-hover: #4e1d87;
+  --phonepe-purple-dark: #3a136b;
+  --phonepe-purple-light: #f5f0f9;
+  --phonepe-purple-tint: #ede7f6;
+  --phonepe-accent-green: #00c853;
+  --phonepe-accent-green-light: #e8f5e9;
+  --phonepe-gold: #ffc107;
+  --phonepe-cyan: #00b0ff;
+  --phonepe-coral: #ff5252;
+
+  /* Neutral Spectrum */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9f9fb;
+  --bg-tertiary: #f1f3f6;
+  --text-primary: #17181c;
+  --text-secondary: #5c626d;
+  --text-muted: #8b92a0;
+  --border-light: #eaedf1;
+  --border-subtle: #d0d7e2;
+
+  /* Elevation Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 6px 20px rgba(95, 37, 159, 0.08);
+  --shadow-lg: 0 12px 36px rgba(95, 37, 159, 0.12);
+  --shadow-card: 0 4px 16px rgba(23, 24, 28, 0.06);
+
+  /* Border Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* Container Boundaries */
+  --max-width: 1280px;
+  --nav-height: 76px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}

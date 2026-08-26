@@ -1,0 +1,426 @@
+.hero-section {
+  position: relative;
+  background: linear-gradient(135deg, #f7f2fc 0%, #ffffff 60%, #ede7f6 100%);
+  padding-top: clamp(2.5rem, 5vw, 5rem);
+  padding-bottom: clamp(3rem, 6vw, 5.5rem);
+  overflow: hidden;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+}
+
+/* Left Content */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--phonepe-purple-light);
+  color: var(--phonepe-purple);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.785rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(95, 37, 159, 0.15);
+}
+
+.hero-title {
+  color: var(--text-primary);
+  margin-bottom: 1.25rem;
+}
+
+.hero-title-highlight {
+  color: var(--phonepe-purple);
+  background: linear-gradient(120deg, var(--phonepe-purple), #7a35c1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  margin-bottom: 2rem;
+  max-width: 580px;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  padding: 0.95rem 2rem;
+}
+
+/* Trust Metrics */
+.hero-trust-metrics {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  padding: 1.25rem 1.75rem;
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+}
+
+.trust-metric-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-num {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--phonepe-purple);
+  line-height: 1.1;
+}
+
+.metric-lbl {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.trust-divider {
+  width: 1px;
+  height: 32px;
+  background-color: var(--border-light);
+}
+
+/* Right Visual Mockup */
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Floating Badges */
+.floating-badge {
+  position: absolute;
+  background-color: var(--white);
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  z-index: 10;
+  border: 1px solid var(--border-light);
+}
+
+.badge-top-left {
+  top: 5%;
+  left: -5%;
+}
+
+.badge-bottom-right {
+  bottom: 8%;
+  right: -5%;
+}
+
+/* Phone Mockup Frame */
+.phone-mockup-frame {
+  width: 300px;
+  height: 580px;
+  background-color: #17181c;
+  border-radius: 40px;
+  padding: 10px;
+  box-shadow: 0 25px 60px rgba(95, 37, 159, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.phone-notch {
+  width: 120px;
+  height: 20px;
+  background-color: #17181c;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  border-radius: 32px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.phone-top-bar {
+  height: 40px;
+  padding: 12px 16px 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.phone-brand-title {
+  color: var(--phonepe-purple);
+  font-weight: 800;
+}
+
+.screen-content {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.screen-header-card {
+  background-color: var(--phonepe-purple-light);
+  padding: 0.85rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.75rem;
+}
+
+.screen-header-card.gold-bg {
+  background-color: #fff8e1;
+}
+
+.screen-header-card.soundbox-bg {
+  background-color: #f3e5f5;
+}
+
+.screen-card-subtitle {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--phonepe-purple);
+  letter-spacing: 0.05em;
+  display: block;
+}
+
+.screen-header-card h4 {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+
+.qr-demo-wrapper {
+  background-color: var(--bg-secondary);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px dashed var(--phonepe-purple);
+}
+
+.upi-id-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.screen-alert-success {
+  background-color: var(--phonepe-accent-green-light);
+  border: 1px solid var(--phonepe-accent-green);
+  padding: 0.6rem;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.alert-bold {
+  font-size: 0.785rem;
+  font-weight: 700;
+  color: #1b5e20;
+}
+
+.alert-sub {
+  font-size: 0.65rem;
+  color: #2e7d32;
+}
+
+.recharge-plan-card {
+  background-color: var(--bg-tertiary);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.plan-price {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--phonepe-purple);
+}
+
+.plan-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.screen-action-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--phonepe-purple);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: var(--radius-full);
+}
+
+.screen-action-btn.gold-btn {
+  background-color: #ffb300;
+  color: #111;
+}
+
+.gold-stats-card {
+  text-align: center;
+  background-color: #fffde7;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.gold-live-price {
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: #b78103;
+}
+
+.gold-vault-desc {
+  font-size: 0.7rem;
+}
+
+.soundbox-demo-box {
+  background-color: var(--phonepe-purple-light);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  text-align: center;
+}
+
+.sound-wave-icon {
+  animation: soundWave 1s ease-in-out infinite;
+}
+
+.soundbox-quote {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--phonepe-purple);
+  font-style: italic;
+}
+
+.soundbox-play-btn {
+  font-size: 0.785rem;
+  padding: 0.5rem 1rem;
+  min-height: 36px;
+}
+
+/* Phone Bottom Tab Bar */
+.phone-screen-tabs {
+  height: 54px;
+  background-color: var(--bg-tertiary);
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 0.5rem;
+}
+
+.tab-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  padding: 0.3rem 0.5rem;
+  border-radius: var(--radius-xs);
+  transition: color var(--transition-fast);
+}
+
+.tab-btn.active {
+  color: var(--phonepe-purple);
+}
+
+/* Responsive Breakdown */
+@media (max-width: 1024px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-trust-metrics {
+    justify-content: center;
+  }
+
+  .floating-badge {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-trust-metrics {
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .metric-num {
+    font-size: 1.1rem;
+  }
+
+  .metric-lbl {
+    font-size: 0.65rem;
+  }
+
+  .phone-mockup-frame {
+    width: 270px;
+    height: 520px;
+  }
+}
